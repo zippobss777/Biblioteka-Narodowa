@@ -275,7 +275,7 @@ main > section#galeria {
 section#artykuly{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: auto;
 }
 
 section#artykuly > .artykul{
@@ -287,6 +287,117 @@ section#artykuly > .artykul{
     flex-direction: column;
     font-weight: 500;
     gap: 20px;
-    height: 100%;
     justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 40px;
+        width: calc(100% - 80px);
+    }
+
+    main {
+        padding: 20px 40px;
+    }
+
+    main > section#ksiazki > #ksiazki {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    main > section#ksiazki > #ksiazki > .ksiazka {
+        width: 31%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        width: calc(100% - 40px);
+        gap: 10px;
+    }
+
+    header > nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    main {
+        margin-top: 130px;
+        padding: 20px;
+    }
+
+    main > section#witaj > h1,
+    main > section#ksiazki > h1 {
+        font-size: 38px;
+    }
+
+    main > section#ksiazki > #ksiazki > .ksiazka {
+        width: 48%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section#artykuly {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    section#artykuly > .artykul {
+        width: calc(100% - 40px);
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header > #left {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    header > nav > a {
+        font-size: 15px;
+    }
+
+    main {
+        margin-top: 150px;
+        padding: 15px;
+    }
+
+    main > section#witaj > h1,
+    main > section#ksiazki > h1 {
+        font-size: 28px;
+    }
+
+    main > section#ksiazki > #ksiazki > .ksiazka {
+        width: 100%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-historia {
+        font-size: 15px;
+    }
+
+    .tabela-historia th,
+    .tabela-historia td {
+        padding: 10px;
+    }
+
+    .tabela-historia td:first-child {
+        white-space: normal;
+        width: 30%;
+    }
 }
