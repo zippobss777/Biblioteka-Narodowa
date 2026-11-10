@@ -102,4 +102,81 @@ footer{
 
 main > section#ksiazki > h1{
     border: 1px solid red;
+    width: 100%;
+    text-align: center;
+}
+
+main > section#ksiazki{
+    display: flex;
+    flex-direction: column;
+}
+
+main > section#ksiazki > #ksiazki{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka{
+    width: 15%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img{
+    height: 350px;
+    border: 1px solid green;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#dziady{
+    background-image: url(/img/Dziady.jpg);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#opowiesc-wigilijna{
+    background-image: url(/img/OpowiesWigilijna.webp);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#latarnik{
+    background-image: url(/img/Latarnik.jpg);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#zemsta{
+    background-image: url(/img/Zemsta.jpg);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#balladyna{
+    background-image: url(/img/Balladyna.jpg);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .img#podania-i-legendy-polskie{
+    background-image: url(/img/Podania_i_legendy_polskie.jpg);
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Trade Winds", system-ui;
+    gap: 10px;
+    padding: 20px 20px;
+    display: flex;
+    margin-top: auto;
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .content > p{
+    height: auto;
+    margin: 0;
+}
+
+main > section#ksiazki > #ksiazki > .ksiazka > .content > h2.tytul{
+    font-family: none;
+    font-size: 26px;
+    margin-top: 2px;
 }
