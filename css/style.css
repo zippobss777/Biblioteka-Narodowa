@@ -181,3 +181,61 @@ main > section#ksiazki > #ksiazki > .ksiazka > .content > h2.tytul{
     font-size: 24px;
     margin-top: 2px;
 }
+
+main > section#historia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main > section#historia > h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main > section#historia > h2 {
+    font-family: Manuale, serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tabela-historia {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Manuale, serif;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.tabela-historia th,
+.tabela-historia td {
+    border: 1px solid black;
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabela-historia th {
+    background-color: rgba(0, 0, 0, 0.12);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tabela-historia td:first-child {
+    width: 22%;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.tabela-historia tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.tabela-historia tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
