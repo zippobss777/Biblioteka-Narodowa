@@ -271,3 +271,22 @@ main > section#galeria {
 .zdjecie:hover img {
     transform: scale(1.05);
 }
+
+section#artykuly{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+section#artykuly > .artykul{
+    width: calc(32% - 40px);
+    border: 1px solid purple;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 20px;
+    height: 100%;
+    justify-content: center;
+}
