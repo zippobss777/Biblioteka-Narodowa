@@ -307,11 +307,9 @@ section#artykuly > .artykul{
     min-height: 200px;
     font-size: 25px;
     font-family: 'DM Sans';
-    transition: all 0.3s ease;
 }
 
 section#artykuly > .artykul:hover{
-    transform: translateY(-5px);
     border-style: solid;
 }
 
